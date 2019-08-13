@@ -1,0 +1,784 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20181.19.0515.1506                               -->
+<workbook original-version='18.1' source-build='2018.1.13 (20181.19.0515.1506)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SortTagCleanup />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (hatestat)' inline='true' name='federated.0uolr1u0jpsmf917bp612004h5u1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='hatestat' name='excel-direct.1xf04aa1tuozez12fis4701z9cyl'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/Raghav/Desktop/RxM/MSc DA/Semester 2/DV (H9DV)/DV Project/HateCrimeStats/hatestat.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1xf04aa1tuozez12fis4701z9cyl' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:Y19:no:A1:Y19:0' header='yes' outcome='2'>
+            <column datatype='integer' name='ComplaintNo' ordinal='0' />
+            <column datatype='string' name='Occurrence_DT' ordinal='1' />
+            <column datatype='integer' name='CCMonth' ordinal='2' />
+            <column datatype='integer' name='Year' ordinal='3' />
+            <column datatype='string' name='Month' ordinal='4' />
+            <column datatype='integer' name='# Victims Under 18' ordinal='5' />
+            <column datatype='integer' name='# Victims 18 &amp; Older' ordinal='6' />
+            <column datatype='integer' name='Total Victims' ordinal='7' />
+            <column datatype='integer' name='# Offenders Under 18' ordinal='8' />
+            <column datatype='integer' name='# Offenders 18 &amp; Older' ordinal='9' />
+            <column datatype='string' name='Total Offenders' ordinal='10' />
+            <column datatype='integer' name='Offender Race Code' ordinal='11' />
+            <column datatype='string' name='RaceDesc' ordinal='12' />
+            <column datatype='string' name='Ethnicity Code' ordinal='13' />
+            <column datatype='string' name='EthnicityDesc' ordinal='14' />
+            <column datatype='integer' name='Offense Code' ordinal='15' />
+            <column datatype='string' name='OffenseDesc' ordinal='16' />
+            <column datatype='integer' name='NumofVictims' ordinal='17' />
+            <column datatype='integer' name='Location Code' ordinal='18' />
+            <column datatype='string' name='LocationDesc' ordinal='19' />
+            <column datatype='integer' name='Bias Motivation 1' ordinal='20' />
+            <column datatype='string' name='MotivationDesc' ordinal='21' />
+            <column datatype='string' name='Bias Motivation 2' ordinal='22' />
+            <column datatype='string' name='MotivationDesc2' ordinal='23' />
+            <column datatype='string' name='Victim Type' ordinal='24' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>ComplaintNo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ComplaintNo]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ComplaintNo</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Occurrence_DT</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Occurrence_DT]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Occurrence_DT</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CCMonth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CCMonth]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CCMonth</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name># Victims Under 18</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[# Victims Under 18]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias># Victims Under 18</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name># Victims 18 &amp; Older</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[# Victims 18 &amp; Older]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias># Victims 18 &amp; Older</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Victims</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Victims]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Total Victims</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name># Offenders Under 18</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[# Offenders Under 18]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias># Offenders Under 18</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name># Offenders 18 &amp; Older</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[# Offenders 18 &amp; Older]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias># Offenders 18 &amp; Older</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Offenders</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Total Offenders]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Total Offenders</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offender Race Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Offender Race Code]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Offender Race Code</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RaceDesc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[RaceDesc]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>RaceDesc</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ethnicity Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ethnicity Code]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Ethnicity Code</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EthnicityDesc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[EthnicityDesc]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>EthnicityDesc</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offense Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Offense Code]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Offense Code</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OffenseDesc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[OffenseDesc]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>OffenseDesc</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumofVictims</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumofVictims]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>NumofVictims</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Location Code]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Location Code</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LocationDesc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[LocationDesc]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>LocationDesc</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bias Motivation 1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bias Motivation 1]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Bias Motivation 1</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MotivationDesc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MotivationDesc]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>MotivationDesc</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bias Motivation 2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Bias Motivation 2]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Bias Motivation 2</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MotivationDesc2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MotivationDesc2]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>MotivationDesc2</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victim Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Victim Type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Victim Type</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:Y19:no:A1:Y19:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='CC Month' datatype='integer' name='[CCMonth]' role='dimension' type='quantitative' />
+      <column caption='Complaint No' datatype='integer' name='[ComplaintNo]' role='measure' type='quantitative' />
+      <column caption='Ethnicity Desc' datatype='string' name='[EthnicityDesc]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Location Code]' role='dimension' type='ordinal' />
+      <column caption='Location Desc' datatype='string' name='[LocationDesc]' role='dimension' type='nominal' />
+      <column caption='Motivation Desc' datatype='string' name='[MotivationDesc]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Numof Victims' datatype='integer' name='[NumofVictims]' role='measure' type='quantitative' />
+      <column caption='Occurrence DT' datatype='string' name='[Occurrence_DT]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Offense Code]' role='dimension' type='ordinal' />
+      <column caption='Offense Desc' datatype='string' name='[OffenseDesc]' role='dimension' type='nominal' />
+      <column caption='Race Desc' datatype='string' name='[RaceDesc]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column-instance column='[LocationDesc]' derivation='None' name='[none:LocationDesc:nk]' pivot='key' type='nominal' />
+      <column-instance column='[RaceDesc]' derivation='None' name='[none:RaceDesc:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.605128' measure-ordering='alphabetic' measure-percentage='0.394872' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:LocationDesc:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Air/Bus/Train Terminal&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Highway/Road/Alley/Street&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Drug Store/Dr. Office/Hospital&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Residence/Home&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Church/Synagogue/Temple&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Parking Lot/Garage&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bar/Night Club&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Restaurant&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:RaceDesc:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Asian&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;White&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Black&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Ireland&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (hatestat)' name='federated.0uolr1u0jpsmf917bp612004h5u1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0uolr1u0jpsmf917bp612004h5u1'>
+            <column caption='Numof Victims' datatype='integer' name='[NumofVictims]' role='measure' type='quantitative' />
+            <column caption='Race Desc' datatype='string' name='[RaceDesc]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[RaceDesc]' derivation='None' name='[none:RaceDesc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[NumofVictims]' derivation='Sum' name='[sum:NumofVictims:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0uolr1u0jpsmf917bp612004h5u1].[none:RaceDesc:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0uolr1u0jpsmf917bp612004h5u1].[sum:NumofVictims:qk]' enable-instant-analytics='true' formula='min' id='refline0' label-type='none' paired-id='refline1' scope='per-cell' symmetric='false' value-column='[federated.0uolr1u0jpsmf917bp612004h5u1].[sum:NumofVictims:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0uolr1u0jpsmf917bp612004h5u1].[sum:NumofVictims:qk]' enable-instant-analytics='true' formula='max' id='refline1' label-type='none' paired-id='refline0' scope='per-cell' symmetric='false' value-column='[federated.0uolr1u0jpsmf917bp612004h5u1].[sum:NumofVictims:qk]' z-order='2' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows onTop='true' total='true'>[federated.0uolr1u0jpsmf917bp612004h5u1].[sum:NumofVictims:qk]</rows>
+        <cols>([federated.0uolr1u0jpsmf917bp612004h5u1].[none:RaceDesc:nk] / [federated.0uolr1u0jpsmf917bp612004h5u1].[none:Year:ok])</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (hatestat)' name='federated.0uolr1u0jpsmf917bp612004h5u1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0uolr1u0jpsmf917bp612004h5u1'>
+            <column caption='Location Desc' datatype='string' name='[LocationDesc]' role='dimension' type='nominal' />
+            <column caption='Race Desc' datatype='string' name='[RaceDesc]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Victims]' role='measure' type='quantitative' />
+            <column-instance column='[LocationDesc]' derivation='None' name='[none:LocationDesc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[RaceDesc]' derivation='None' name='[none:RaceDesc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Victims]' derivation='Sum' name='[sum:Total Victims:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <alphabetic-sort column='[federated.0uolr1u0jpsmf917bp612004h5u1].[none:LocationDesc:nk]' direction='DESC' />
+          <alphabetic-sort column='[federated.0uolr1u0jpsmf917bp612004h5u1].[none:RaceDesc:nk]' direction='DESC' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='vertical-align' field='[federated.0uolr1u0jpsmf917bp612004h5u1].[none:LocationDesc:nk]' value='center' />
+            <format attr='text-align' field='[federated.0uolr1u0jpsmf917bp612004h5u1].[none:LocationDesc:nk]' value='center' />
+            <format attr='text-orientation' field='[federated.0uolr1u0jpsmf917bp612004h5u1].[none:LocationDesc:nk]' value='0' />
+            <format attr='wrap' field='[federated.0uolr1u0jpsmf917bp612004h5u1].[none:LocationDesc:nk]' value='off' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0uolr1u0jpsmf917bp612004h5u1].[sum:Total Victims:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0uolr1u0jpsmf917bp612004h5u1].[none:RaceDesc:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0uolr1u0jpsmf917bp612004h5u1].[sum:Total Victims:qk]</rows>
+        <cols>[federated.0uolr1u0jpsmf917bp612004h5u1].[none:LocationDesc:nk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0uolr1u0jpsmf917bp612004h5u1].[none:RaceDesc:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0uolr1u0jpsmf917bp612004h5u1].[none:RaceDesc:nk]</field>
+            <field>[federated.0uolr1u0jpsmf917bp612004h5u1].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0uolr1u0jpsmf917bp612004h5u1].[none:RaceDesc:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0uolr1u0jpsmf917bp612004h5u1].[none:Month:nk]</field>
+            <field>[federated.0uolr1u0jpsmf917bp612004h5u1].[none:RaceDesc:nk]</field>
+            <field>[federated.0uolr1u0jpsmf917bp612004h5u1].[none:Victim Type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
