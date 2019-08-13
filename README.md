@@ -17,7 +17,7 @@ To replicate the Tableau visualisations in files **TABLEAU.twb and Interactive D
 
 To replicate the Tableau visualisations in files **TABLEAU_2.twb**, simply link the Tableau file with the **hatestat.xlsx** in the HateCrimeStats folder
 
-The interactive dashboard can be accessed over here: [Check it out!] (http://public.tableau.com/profile/raghav.mehta#!/vizhome/StLouisCrimeData/Dashboard1)
+The interactive dashboard can be accessed over here: [Check it out!](http://public.tableau.com/profile/raghav.mehta#!/vizhome/StLouisCrimeData/Dashboard1)
 
 ## **Infographic**
-The infographic (size A3) was created on the website [Venngage] (http://venngage.com/)
+The infographic (size A3) was created on the website [Venngage](http://venngage.com/)
