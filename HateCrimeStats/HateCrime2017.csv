@@ -1,0 +1,12 @@
+ComplaintNo,Occurrence_DT,CCMonth,# Victims Under 18,# Victims 18 & Older,Total Victims,# Offenders Under 18,# Offenders 18 & Older,Total Offenders,Offender Race Code,RaceDesc,Ethnicity Code,EthnicityDesc,Offense Code,OffenseDesc,NumofVictims,Location Code,LocationDesc,Bias Motivation 1,MotivationDesc,Bias Motivation 2,MotivationDesc2,Victim Type
+17001358,1/5/2017 9:00,201701,0,1,1,0,0,0,6,Unknown                         ,U,Unknown                            ,11,Destruction/Damage/Vandalism,1,13,Highway/Road/Alley/Street,12,Anti-Black,,,Individual
+17010315,3/4/2017 17:15,201703,0,1,1,0,1,1,1,White                           ,N,Not Hispanic or Latino             ,4,Aggravated Assault,1,13,Highway/Road/Alley/Street,12,Anti-Black,,,Individual
+17011808,2/28/2017 8:00,201703,0,1,1,0,0,0,2,Black                           ,U,Unknown                            ,10,Intimidation,1,13,Highway/Road/Alley/Street,12,Anti-Black,,,Individual
+17016245,4/7/2017 18:00,201704,0,1,1,0,1,1,6,Unknown                         ,U,Unknown                            ,9,Simple Assault,1,9,Drug Store/Dr. Office/Hospital,11,Anti-White,,,Individual
+17021397,5/6/2017 10:45,201705,0,27,1,0,1,1,4,Asian                           ,U,Unknown                            ,9,Simple Assault,1,1,Air/Bus/Train Terminal,12,Anti-Black,,,Individual
+17028119,6/10/2017 2:45,201706,0,2,2,0,1,1,1,White                           ,N,Not Hispanic or Latino             ,4,Aggravated Assault,2,21,Restaurant,12,Anti-Black,,,Individual
+17031102,6/14/2017 15:00,201707,0,1,1,0,1,1,1,White                           ,U,Unknown                            ,10,Intimidation,1,13,Highway/Road/Alley/Street,12,Anti-Black,,,Individual
+17045882,9/17/2017 7:15,201709,0,1,1,0,2,2,2,Black                           ,U,Unknown                            ,9,Simple Assault,1,13,Highway/Road/Alley/Street,11,Anti-White,,,Individual
+17047668,9/28/2017 2:30,201710,0,1,1,0,1,1,2,Black                           ,U,Unknown                            ,9,Simple Assault,1,13,Highway/Road/Alley/Street,11,Anti-White,,,Individual
+17056903,11/20/2017 7:30,201711,0,1,1,0,1,NULL,2,Black                           ,N,Not Hispanic or Latino             ,4,Aggravated Assault,1,13,Highway/Road/Alley/Street,11,Anti-White,,,Individual
+17058282,11/28/2017 23:25,201711,0,4,4,0,1,1,1,White                           ,N,Not Hispanic or Latino             ,4,Aggravated Assault,4,21,Restaurant,12,Anti-Black,,,Individual
