@@ -5,7 +5,7 @@ Downloaded crime offences and hate crime data from Metropolitan Police Departmen
 ## **Coordinates Transformation**
 Data was processed in R studio primarily to transform the coordinates from **NAD83 format (North American Datum of 1983)** to **World Geodetic System 1984 (WGS84)** as it is readable by Tableau. I used the **library rdgal in R studio.** 
 
-First we assigned a known Coordinate Reference System to the spatial data (ESRI: 102696 for St. Louis City) and then spatially transformed the coordinates fto WGS84 (EPSG: 4326).
+First we assigned a known Coordinate Reference System to the spatial data (ESRI: 102696 for St. Louis City) and then spatially transformed the coordinates to WGS84 (EPSG: 4326).
 
 A good read to understand more: [Overview of Coordinate Reference Systems (CRS) in R](https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/OverviewCoordinateReferenceSystems.pdf)
 
